@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 async function dbConnect() {
     mongoose.connect(
-        process.env.MONGO_URI,
+        'mongodb+srv://admin:babubhai123@neog-cluster.yuntr.mongodb.net/sneakerTV',
         {
             useNewUrlParser: true,
             useUnifiedTopology: true
