@@ -6,10 +6,12 @@ const PORT = process.env.PORT || 8000;
 const videos = require('./routes/express.videos');
 const Video = require('./models/videos-model');
 const videoData = require('./Data');
+const {dbConnect} = require('./db/db');
 
 
 app.use(express.json());
 app.use(cors());
+dbConnect();
 
 app.get('/', (req, res) => {
     res.json({ success: true, message: 'sneaker.tv API' });
