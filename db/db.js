@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
+const mongoURI = process.env['MONGO_URI']
 
 async function dbConnect() {
     mongoose.connect(
-        'mongodb+srv://admin:babubhai123@neog-cluster.yuntr.mongodb.net/sneakerTV',
+        mongoURI,
         {
             useNewUrlParser: true,
             useUnifiedTopology: true

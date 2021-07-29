@@ -1,5 +1,4 @@
 const express = require('express');
-const videos = require('../Data');
 const router = express.Router();
 const Video = require('../models/videos-model');
 
